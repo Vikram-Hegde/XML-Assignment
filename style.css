@@ -19,6 +19,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  padding: 1rem 0;
 }
 
 .card {
@@ -55,7 +56,7 @@ main {
 
 .card__dp {
   padding: var(--inner-spacing);
-  background-color: hsl(0 0% 93%);
+  background-color: hsl(0 0% 94%);
   border-radius: 500px;
 }
 
