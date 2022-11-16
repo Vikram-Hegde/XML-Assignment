@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="./student.xsl" type="text/xsl"?> 
+<!-- 
+	Structure of the data
+	students
+		student
+			USN/UID
+			Name
+			University Name
+			Branch
+			Year of Join
+			Email
+ -->               
+<students>
+	<student>
+		<uid>20191CSE0092</uid>
+		<name>Shreya</name>
+		<uname>BMSIT</uname> 
+		<branch>CSE</branch> 
+		<yoj>2019</yoj>
+		<email>shreya22@gmail.com</email>
+		<address>T. Dasarahalli, Jalahalli</address>
+	</student>
+	<student>
+		<uid>20201ISE0034</uid>
+		<name>Rahul</name>
+		<uname>VIT</uname>
+		<branch>ISE</branch>
+		<yoj>2020</yoj>
+		<email>rahulkhan@gmail.com</email>
+		<address>AMS Layout, Bengaluru</address>
+	</student>
+	<student>
+		<uid>20181CSE1201</uid>
+		<name>Suhaas</name>
+		<uname>SVIT</uname>
+		<branch>CSE</branch>
+		<yoj>2018</yoj>
+		<email>suhass14@gmail.com</email>
+		<address>Defence Layout, Vidyaranyapura</address>
+	</student>
+
+</students>
