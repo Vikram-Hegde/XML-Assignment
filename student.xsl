@@ -7,40 +7,41 @@
 				<link rel="stylesheet" href="style.css" />
 			</head>
 			<body>
-				<!-- <table bgcolor='red' align="center" border="2" style="border-collapse: collapse; width: 100%;">
-					<tr>
-						<th>UID</th>
-						<th>Name</th>
-						<th>University Name</th>
-						<th>Branch</th>
-						<th>Year of Join</th>
-						<th>Email</th>
-					</tr>
-					<xsl:for-each select="students/student">
+				<section>
+					<table border="1" style="border-collapse: collapse">
 						<tr>
-							<td>
-								<xsl:value-of select="uid" />
-							</td>
-							<td>
-								<xsl:value-of select="name" />
-							</td>
-							<td>
-								<xsl:value-of select="uname" />
-							</td>
-							<td>
-								<xsl:value-of select="branch" />
-							</td>
-							<td>
-								<xsl:value-of select="yoj" />
-							</td>
-							<td>
-								<xsl:value-of select="email" />
-							</td>
+							<th>UID</th>
+							<th>Name</th>
+							<th>University Name</th>
+							<th>Branch</th>
+							<th>Year of Join</th>
+							<th>Email</th>
 						</tr>
-					</xsl:for-each>
-				</table> -->
-
-				<!-- above not to be deleted, do we show card like? -->
+						<xsl:for-each select="students/student">
+							<tr>
+								<td>
+									<xsl:value-of select="uid" />
+								</td>
+								<td>
+									<xsl:value-of select="name" />
+								</td>
+								<td>
+									<xsl:value-of select="uname" />
+								</td>
+								<td>
+									<xsl:value-of select="branch" />
+								</td>
+								<td>
+									<xsl:value-of select="yoj" />
+								</td>
+								<td>
+									<xsl:value-of select="email" />
+								</td>
+							</tr>
+						</xsl:for-each>
+					</table>
+				</section>
+				<!-- above not to be deleted -->
 				<main>
 					<xsl:for-each select="students/student">
 						<div class="card">
@@ -62,7 +63,7 @@
 									<use href="#qr-code" />
 								</svg>
 							</div>
-							<div class="card__group" style="--left: 0.5rem">
+							<div class="card__group" style="--left: 0.6rem">
 								<div class="card__group card__group--horizontal">
 									<div class="card__uname card__field">
 										<svg height='20' width='20'>
@@ -100,7 +101,7 @@
 						</div>
 					</xsl:for-each>
 				</main>
-				<svg display="none">
+				<svg display="none" xmlns="https://w3.org/1999/svg">
 					<symbol id="card-dp" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M33 15V24M3 15L18 7.5L33 15L18 22.5L3 15Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 						<path d="M9 18V25.5C13.5 30 22.5 30 27 25.5V18" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
