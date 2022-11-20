@@ -8,12 +8,15 @@
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 				<title>Student Information</title>
 				<link rel="stylesheet" href="style.css" />
+				
 			</head>
 			<body>
-
 				<!-- above not to be deleted -->
+				<section class="panel">
+					<button class="btn_toggle">Display</button>
+				</section>
 				<main>
-					<section>
+					<section class="table">
 						<table border="1" style="border-collapse: collapse">
 							<tr>
 								<th>UID</th>
@@ -47,6 +50,7 @@
 							</xsl:for-each>
 						</table>
 					</section>
+					<section class="cards">
 					<xsl:for-each select="students/student">
 						<div class="card">
 							<div class="card__header">
@@ -104,6 +108,7 @@
 							</div>
 						</div>
 					</xsl:for-each>
+				</section>
 				</main>
 				<svg display="none" xmlns="https://w3.org/1999/svg">
 					<symbol id="card-dp" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -164,5 +169,6 @@
 				</svg>
 			</body>
 		</html>
+		<script src="index.js" language="JavaScript" type="text/jscript"></script>
 	</xsl:template>
 </xsl:stylesheet>
