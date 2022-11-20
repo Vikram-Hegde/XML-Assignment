@@ -7,42 +7,43 @@
 				<link rel="stylesheet" href="style.css" />
 			</head>
 			<body>
-				<section>
-					<table border="1" style="border-collapse: collapse">
-						<tr>
-							<th>UID</th>
-							<th>Name</th>
-							<th>University Name</th>
-							<th>Branch</th>
-							<th>Year of Join</th>
-							<th>Email</th>
-						</tr>
-						<xsl:for-each select="students/student">
-							<tr>
-								<td>
-									<xsl:value-of select="uid" />
-								</td>
-								<td>
-									<xsl:value-of select="name" />
-								</td>
-								<td>
-									<xsl:value-of select="uname" />
-								</td>
-								<td>
-									<xsl:value-of select="branch" />
-								</td>
-								<td>
-									<xsl:value-of select="yoj" />
-								</td>
-								<td>
-									<xsl:value-of select="email" />
-								</td>
-							</tr>
-						</xsl:for-each>
-					</table>
-				</section>
+
 				<!-- above not to be deleted -->
 				<main>
+					<section>
+						<table border="1" style="border-collapse: collapse">
+							<tr>
+								<th>UID</th>
+								<th>Name</th>
+								<th>University Name</th>
+								<th>Branch</th>
+								<th>Year of Join</th>
+								<th>Email</th>
+							</tr>
+							<xsl:for-each select="students/student">
+								<tr>
+									<td>
+										<xsl:value-of select="uid" />
+									</td>
+									<td>
+										<xsl:value-of select="name" />
+									</td>
+									<td>
+										<xsl:value-of select="uname" />
+									</td>
+									<td>
+										<xsl:value-of select="branch" />
+									</td>
+									<td>
+										<xsl:value-of select="yoj" />
+									</td>
+									<td>
+										<xsl:value-of select="email" />
+									</td>
+								</tr>
+							</xsl:for-each>
+						</table>
+					</section>
 					<xsl:for-each select="students/student">
 						<div class="card">
 							<div class="card__header">
