@@ -42,7 +42,6 @@ main {
   flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem 0;
-  /* background-color: red; */
   transition-property: opacity;
 }
 
@@ -153,11 +152,12 @@ tr:nth-child(odd) {
 
 th,
 td {
-	padding: 0.25rem 0.75rem;
+	padding: 0.5em 1.25em;
 }
 
 th {
-	background-color: hsl(0 0% 90%);
+	background-color: var(--theme);
+	color: white;
 }
 .hidden {
   display: none;
