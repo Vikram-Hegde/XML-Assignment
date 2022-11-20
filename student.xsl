@@ -8,22 +8,24 @@
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 				<title>Student Information</title>
 				<link rel="stylesheet" href="style.css" />
-				
 			</head>
 			<body>
+
 				<!-- above not to be deleted -->
 				<section class="panel">
 					<button class="btn_toggle">Display</button>
 				</section>
 				<main>
 					<section class="table">
-						<table border="1" style="border-collapse: collapse">
+						<table style="border-collapse: collapse">
 							<tr>
 								<th>UID</th>
 								<th>Name</th>
 								<th>University Name</th>
 								<th>Branch</th>
-								<th>Year of Join</th>
+								<th>
+									<abbr title="Year of joining">YOJ</abbr>
+								</th>
 								<th>Email</th>
 							</tr>
 							<xsl:for-each select="students/student">

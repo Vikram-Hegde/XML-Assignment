@@ -138,20 +138,26 @@ svg {
 }
 
 table {
-  border-color: hsl(0 0% 75%);
+	--theme: hsl(180 60% 40%);
+  border-bottom: 2px solid var(--theme);
+	font-size: 1.15rem;
 }
 
 tbody {
   border-radius: 8px;
 }
 
+tr:nth-child(odd) {
+	background-color: hsl(180 20% 90%)
+}
+
 th,
 td {
-  padding: 0.25rem 0.75rem;
+	padding: 0.25rem 0.75rem;
 }
 
 th {
-  background-color: hsl(0 0% 90%);
+	background-color: hsl(0 0% 90%);
 }
 .hidden {
   display: none;
