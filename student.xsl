@@ -10,8 +10,6 @@
 				<link rel="stylesheet" href="style.css" />
 			</head>
 			<body>
-
-				<!-- above not to be deleted -->
 				<section class="panel">
 					<button class="btn_toggle">Display</button>
 				</section>
@@ -53,64 +51,64 @@
 						</table>
 					</section>
 					<section class="cards">
-					<xsl:for-each select="students/student">
-						<div class="card">
-							<div class="card__header">
-								<div class="card__dp">
-									<svg height='36' width='36'>
-										<use href="#card-dp" />
-									</svg>
-								</div>
-								<div class="card__group" style="--gap: 0;">
-									<div class="card__name">
-										<xsl:value-of select="name" />
-									</div>
-									<div class="card__id">
-										<xsl:value-of select="uid" />
-									</div>
-								</div>
-								<svg class="card__qr-code" width='42' height='42'>
-									<use href="#qr-code" />
-								</svg>
-							</div>
-							<div class="card__group" style="--left: 0.6rem">
-								<div class="card__group card__group--horizontal">
-									<div class="card__uname card__field">
-										<svg height='20' width='20'>
-											<use href="#university" />
+						<xsl:for-each select="students/student">
+							<div class="card">
+								<div class="card__header">
+									<div class="card__dp">
+										<svg height='36' width='36'>
+											<use href="#card-dp" />
 										</svg>
-										<xsl:value-of select="uname" />
 									</div>
-									<div class="card__course card__field">
+									<div class="card__group" style="--gap: 0;">
+										<div class="card__name">
+											<xsl:value-of select="name" />
+										</div>
+										<div class="card__id">
+											<xsl:value-of select="uid" />
+										</div>
+									</div>
+									<svg class="card__qr-code" width='42' height='42'>
+										<use href="#qr-code" />
+									</svg>
+								</div>
+								<div class="card__group" style="--left: 0.6rem">
+									<div class="card__group card__group--horizontal">
+										<div class="card__uname card__field">
+											<svg height='20' width='20'>
+												<use href="#university" />
+											</svg>
+											<xsl:value-of select="uname" />
+										</div>
+										<div class="card__course card__field">
+											<svg height='20' width='20'>
+												<use href="#course" />
+											</svg>
+											<xsl:value-of select="branch" />
+										</div>
+									</div>
+									<div class="card__email card__field">
 										<svg height='20' width='20'>
-											<use href="#course" />
+											<use href="#email" />
 										</svg>
-										<xsl:value-of select="branch" />
+										<xsl:value-of select="email" />
 									</div>
-								</div>
-								<div class="card__email card__field">
-									<svg height='20' width='20'>
-										<use href="#email" />
-									</svg>
-									<xsl:value-of select="email" />
-								</div>
-								<div class="card__batch card__field">
-									<svg height='20' width='20'>
-										<use href="#calender" />
-									</svg>
-									<xsl:value-of select="yoj" />
-									Batch
-								</div>
-								<div class="card__address card__field">
-									<svg height='20' width='20'>
-										<use href="#address" />
-									</svg>
-									<xsl:value-of select="address" />
+									<div class="card__batch card__field">
+										<svg height='20' width='20'>
+											<use href="#calender" />
+										</svg>
+										<xsl:value-of select="yoj" />
+										Batch
+									</div>
+									<div class="card__address card__field">
+										<svg height='20' width='20'>
+											<use href="#address" />
+										</svg>
+										<xsl:value-of select="address" />
+									</div>
 								</div>
 							</div>
-						</div>
-					</xsl:for-each>
-				</section>
+						</xsl:for-each>
+					</section>
 				</main>
 				<svg display="none" xmlns="https://w3.org/1999/svg">
 					<symbol id="card-dp" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -169,8 +167,8 @@
 						<path d="M9 22V12H15V22" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 					</symbol>
 				</svg>
+				<script src="index.js" language="JavaScript" type="text/jscript"></script>
 			</body>
 		</html>
-		<script src="index.js" language="JavaScript" type="text/jscript"></script>
 	</xsl:template>
 </xsl:stylesheet>
