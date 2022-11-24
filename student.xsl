@@ -10,10 +10,10 @@
 				<link rel="stylesheet" href="style.css" />
 			</head>
 			<body>
+				<main>
 				<section class="panel">
 					<button class="btn_toggle">Display</button>
 				</section>
-				<main>
 					<section class="table">
 						<table style="border-collapse: collapse">
 							<tr>
