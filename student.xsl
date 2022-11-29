@@ -14,7 +14,7 @@
 				<section class="panel">
 					<button class="btn_toggle">Display</button>
 				</section>
-					<section class="table">
+					<section class="table" style="overflow-x:auto;">
 						<table style="border-collapse: collapse">
 							<tr>
 								<th>UID</th>
