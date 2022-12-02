@@ -10,11 +10,11 @@
 				<link rel="stylesheet" href="style.css" />
 			</head>
 			<body>
+				<main>
 				<section class="panel">
 					<button class="btn_toggle">Display</button>
 				</section>
-				<main>
-					<section class="table">
+					<section class="table" style="overflow-x:auto;">
 						<table style="border-collapse: collapse">
 							<tr>
 								<th>UID</th>
